@@ -2,6 +2,14 @@
 
 Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on Vapor.
 
+## TODO
+
+- [ ] Navigation only, not slug, on non-home pages.
+- [ ] Typography pairings could be better, and limit number of font sizes.
+- [ ] Use header wrap for borders.
+- [ ] Improved slug.
+- [ ] Fix blockquotes vs short asides.
+
 ## License
 
 Based on Vapor theme, released under MIT License.
