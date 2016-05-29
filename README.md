@@ -5,7 +5,7 @@ Theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://g
 ## TODO
 
 - [ ] Navigation only, not slug, on non-home pages.
-- [ ] Typography pairings could be better, and limit number of font sizes.
+- [ ] Typography pairings could be better, and limit number of font sizes. Three fonts + icon font is excessive.
 - [ ] Use header wrap for borders.
 - [ ] Improved slug.
 - [ ] Fix blockquotes vs short asides.
