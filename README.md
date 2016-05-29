@@ -1,6 +1,6 @@
 # Airship
 
-Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://github.com/sethlilly/Vapor).
+Theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://github.com/sethlilly/Vapor).
 
 ## TODO
 
