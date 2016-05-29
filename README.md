@@ -1,6 +1,6 @@
 # Airship
 
-Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on Vapor.
+Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://github.com/sethlilly/Vapor).
 
 ## TODO
 
@@ -9,6 +9,7 @@ Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on Vapor.
 - [ ] Use header wrap for borders.
 - [ ] Improved slug.
 - [ ] Fix blockquotes vs short asides.
+- [ ] Add some color (links + header?).
 
 ## License
 
