@@ -1,4 +1,11 @@
 {
   "name": "Airship",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "start": "watch-exec -c 'lessc assets/css/screen.less assets/css/screen.css' -w assets/css/screen.less"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "watch-exec": "^1.2.2"
+  }
 }
