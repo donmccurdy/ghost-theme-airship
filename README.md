@@ -10,7 +10,6 @@ Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](h
 - [x] Add some color (links + header?).
 - [x] Improve header styles on mobile.
 - [ ] Typography pairings could be better, and limit number of font sizes. Three fonts + icon font is excessive.
-- [ ] Underline gradients backwards in Firefox, and a bit funny in Safari.
 
 ## License
 
