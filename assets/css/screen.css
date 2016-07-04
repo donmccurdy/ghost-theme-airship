@@ -76,16 +76,26 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#site-head,
-article,
-article.preview,
-.article-nav {
-  margin: 20px auto;
-  max-width: 600px;
-  width: 90%;
+#site-head {
+  margin: 0;
+  overflow: hidden;
 }
 #site-head img {
   max-width: 100%;
+}
+#site-head .header-col {
+  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
+  max-width: 600px;
+  margin: 0 auto 2em auto;
+  padding: 1em 0;
+}
+article,
+article.preview,
+.article-nav {
+  margin: 1em auto;
+  max-width: 600px;
+  width: 90%;
 }
 article.preview {
   margin-bottom: 4em;
@@ -115,10 +125,7 @@ article.preview {
 .blog-description {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 1.2em;
-  margin-top: 2em;
-  border-top: 1px solid #ecf0f1;
   margin-bottom: 0;
-  padding: 1em;
   line-height: 1.5em;
 }
 section.footer-description {
@@ -205,12 +212,7 @@ footer section {
 }
 /* === Navigation and Pagination === */
 nav {
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: 0.5em;
-  margin-bottom: 2em;
   text-align: center;
-  margin: 0 auto 2em auto;
-  max-width: 600px;
 }
 nav ul {
   list-style: none;
@@ -231,9 +233,6 @@ nav ul li a {
   display: block;
   padding: .5em 0;
 }
-nav.menu {
-  margin-bottom: 2.5em;
-}
 nav.menu li {
   margin: 0 .5em;
   padding: 0;
@@ -252,6 +251,7 @@ nav.pagination li:last-child {
   position: relative;
   width: 90%;
   max-width: 600px;
+  margin: 0 auto;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -386,6 +386,9 @@ table tfoot {
 }
 /* === Media Queries === */
 @media only screen and (min-width: 320px) and (max-width: 500px) {
+  .blog-description {
+    padding: 0 1em;
+  }
   footer section span.copyright {
     display: block;
   }
