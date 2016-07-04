@@ -28,12 +28,12 @@ a,
 a:visited {
   color: #3498db;
   text-decoration: none;
-  transition: color ease 0.7s;
-  -webkit-transition: color ease 0.7s;
+  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.3s;
 }
 a:focus,
 a:hover {
-  color: #02090e;
+  color: #57aae1;
 }
 p,
 li,
@@ -127,13 +127,7 @@ article.preview {
   font-size: 1.2em;
   margin-bottom: 0;
   line-height: 1.5em;
-}
-section.footer-description {
-  margin-bottom: 1em;
-}
-header.article-header,
-header.page-header {
-  margin-bottom: 3em;
+  text-align: center;
 }
 /* === Body === */
 blockquote {
@@ -151,9 +145,12 @@ blockquote p {
   font-size: 20px;
   font-weight: 300;
   margin-top: 0.5em;
-  margin-bottom: 1.2em;
+  margin-bottom: 2em;
   text-align: left;
   text-transform: uppercase;
+}
+.preview .post-meta {
+  margin-bottom: 1.2em;
 }
 .tags {
   font-size: 16px;
@@ -170,15 +167,12 @@ blockquote p {
   text-align: left;
   text-transform: none;
 }
-.post-title a,
 .blog-title a {
   color: #151515;
   text-align: left;
-  transition: color ease 0.7s;
-  -webkit-transition: color ease 0.7s;
+  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.3s;
 }
-.post-title a:focus,
-.post-title a:hover,
 .blog-title a:focus,
 .blog-title a:hover {
   color: #3498db;
@@ -186,9 +180,10 @@ blockquote p {
 }
 h2 {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
   margin-top: 2em;
   text-transform: uppercase;
-  font-weight: 300;
 }
 section.post-content img {
   display: block;
@@ -268,8 +263,8 @@ nav.pagination li:last-child {
   display: inline-block;
   padding: 0;
   text-decoration: none;
-  transition: color ease 0.7s;
-  -webkit-transition: color ease 0.7s;
+  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.3s;
 }
 .newer-posts {
   right: 0;
@@ -284,7 +279,7 @@ nav.pagination li:last-child {
 }
 .older-posts:hover,
 .newer-posts:hover {
-  color: #02090e;
+  color: #57aae1;
   text-decoration: none;
 }
 /* === Extras === */
