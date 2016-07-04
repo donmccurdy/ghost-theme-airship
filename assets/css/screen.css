@@ -79,7 +79,6 @@ h1 {
 #site-head,
 article,
 article.preview,
-a.archive-link,
 .article-nav {
   margin: 20px auto;
   max-width: 600px;
@@ -199,9 +198,6 @@ section.post-content img {
   margin: 0 auto;
   max-width: 100%;
 }
-section.preview.archive h2 {
-  text-align: left;
-}
 img.userimage {
   width: 70px;
   max-width: 70px;
@@ -245,8 +241,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
   margin: 0;
   padding: 0 .5em;
   text-transform: uppercase;
@@ -272,19 +266,6 @@ nav.pagination li:last-child {
   margin-right: 0;
   text-align: left;
 }
-a.archive-link {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
-  display: block;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 3em;
-  margin-top: 3em;
-  padding: .5em 0;
-  text-align: center;
-  text-transform: uppercase;
-}
 .pagination {
   position: relative;
   width: 90%;
@@ -308,7 +289,7 @@ a.archive-link {
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
-.older-posts {
+.newer-posts {
   right: 0;
 }
 .page-number {
@@ -316,7 +297,7 @@ a.archive-link {
   padding: 0;
   margin: 0;
 }
-.newer-posts {
+.older-posts {
   left: 0;
 }
 .older-posts:hover,

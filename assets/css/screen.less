@@ -103,7 +103,7 @@ h1 {
     padding: 0;
 }
 
-#site-head, article, article.preview, a.archive-link, .article-nav {
+#site-head, article, article.preview, .article-nav {
     margin: 20px auto;
     max-width: @maxPageWidth;
     width: 90%;
@@ -236,10 +236,6 @@ section.post-content img {
     max-width: 100%;
 }
 
-section.preview.archive h2 {
-    text-align: left
-}
-
 img.userimage {
     width: 70px;
     max-width: 70px;
@@ -286,8 +282,6 @@ nav {
         li {
             display: inline-block;
             font-family: @secondaryFontFamily;
-            font-size: 14px;
-            font-weight: 300;
             margin: 0;
             padding: 0 .5em;
             text-transform: uppercase;
@@ -320,20 +314,6 @@ nav {
     }
 }
 
-a.archive-link {
-    border-bottom: 1px solid @borderColor;
-    border-top: 1px solid @borderColor;
-    display: block;
-    font-family: @secondaryFontFamily;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 3em;
-    margin-top: 3em;
-    padding: .5em 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .pagination {
     position: relative;
     width: 90%;
@@ -359,7 +339,7 @@ a.archive-link {
     -webkit-transition: color ease 0.7s;
 }
 
-.older-posts {
+.newer-posts {
     right: 0
 }
 
@@ -369,7 +349,7 @@ a.archive-link {
     margin: 0;
 }
 
-.newer-posts {
+.older-posts {
     left: 0
 }
 
