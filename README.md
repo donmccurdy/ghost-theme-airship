@@ -1,6 +1,6 @@
 # Airship
 
-Theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://github.com/sethlilly/Vapor).
+Airship theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://github.com/sethlilly/Vapor).
 
 ## TODO
 
@@ -10,13 +10,14 @@ Theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://g
 - [x] Add some color (links + header?).
 - [x] Improve header styles on mobile.
 - [ ] Typography pairings could be better, and limit number of font sizes. Three fonts + icon font is excessive.
+- [ ] Underline gradients backwards in Firefox, and a bit funny in Safari.
 
 ## License
 
-Based on Vapor theme, released under MIT License.
+The MIT License (MIT)
 
-Copyright (c) 2013-2014 Seth Lilly.  
-Copyright (c) 2016 Don McCurdy.
+Copyright (c) 2016 Don McCurdy.  
+Copyright (c) 2013-2014 Seth Lilly.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
