@@ -7,25 +7,91 @@
 
 // Variables
 
-@bodyBackgroundColor: #ffffff;
+@bodyBackgroundColor: #FFFFFF;
 @baseFontFamily: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@baseFontColor: #7f8c8d;
+@baseFontColor: #7F8C8D;
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
 @headerFontColor: #151515;
 @headerLinkColor: @headerFontColor;
 @secondaryFontFamily: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @preFontFamily: "Consolas", Courier, monospace;
 @tableFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@linkColor: #3498db;
-@linkColorHover: lighten(@linkColor, 8%);
-@borderColor: #ecf0f1;
-@subtleColor: rgba(0,0,0,0.05);
-@postmetaColor: #95a5a6;
-@gistBackgroundColor: #fdfdfd;
+@linkColor: #D96459;
+@borderColor: #ECF0F1;
+@subtleColor: #F3F3F3;
+@postmetaColor: #95A5A6;
+@gistBackgroundColor: #FDFDFD;
 
 @maxPageWidth: 600px;
 
 // Styles
+
+/* === Mixins === */
+
+.underline (@fgColor: @linkColor, @bgColor: @bodyBackgroundColor) {
+    display: inline;
+    background-image:
+        linear-gradient(@bgColor, @bgColor),
+        linear-gradient(@bgColor, @bgColor),
+        linear-gradient(@linkColor, @linkColor);
+    background-size:
+        0.10em 0.01em,
+        0.10em 0.07em,
+        0.07em 0.07em;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        repeat-x;
+    background-position-y:
+        98%,
+        98%,
+        98%;
+    background-position-x:
+        0%,
+        100%,
+        0%;
+    text-shadow:
+         0.10em  0.00em @bgColor,
+         0.10em  0.02em @bgColor,
+         0.10em  0.04em @bgColor,
+         0.10em  0.06em @bgColor,
+         0.10em  0.08em @bgColor,
+         0.10em  0.10em @bgColor,
+         0.08em  0.10em @bgColor,
+         0.06em  0.10em @bgColor,
+         0.04em  0.10em @bgColor,
+         0.02em  0.10em @bgColor,
+         0.00em  0.10em @bgColor,
+        -0.02em  0.10em @bgColor,
+        -0.04em  0.10em @bgColor,
+        -0.06em  0.10em @bgColor,
+        -0.08em  0.10em @bgColor,
+        -0.10em  0.10em @bgColor,
+        -0.10em  0.08em @bgColor,
+        -0.10em  0.06em @bgColor,
+        -0.10em  0.04em @bgColor,
+        -0.10em  0.02em @bgColor,
+        -0.10em  0.00em @bgColor,
+        -0.10em  0.02em @bgColor,
+        -0.10em  0.04em @bgColor,
+        -0.10em -0.06em @bgColor,
+        -0.10em -0.08em @bgColor,
+        -0.10em -0.10em @bgColor,
+        -0.08em -0.10em @bgColor,
+        -0.06em -0.10em @bgColor,
+        -0.04em -0.10em @bgColor,
+        -0.02em -0.10em @bgColor,
+         0.00em -0.10em @bgColor,
+         0.02em -0.10em @bgColor,
+         0.04em -0.10em @bgColor,
+         0.06em -0.10em @bgColor,
+         0.08em -0.10em @bgColor,
+         0.10em -0.10em @bgColor,
+         0.10em -0.08em @bgColor,
+         0.10em -0.06em @bgColor,
+         0.10em -0.04em @bgColor,
+         0.10em -0.02em @bgColor;
+}
 
 /* === Core Styles === */
 
@@ -51,12 +117,10 @@ h1, h2, h3, h4, p, li, dt, dd {
 a, a:visited {
     color: @linkColor;
     text-decoration: none;
-    transition: color ease 0.3s;
-    -webkit-transition: color ease 0.3s;
 }
 
 a:focus, a:hover {
-    color: @linkColorHover;
+    .underline;
 }
 
 p, li, dt, dd {
@@ -211,12 +275,10 @@ blockquote {
 .blog-title a {
     color: @headerLinkColor;
     text-align: left;
-    transition: color ease 0.3s;
-    -webkit-transition: color ease 0.3s;
 }
 
 .blog-title a:focus, .blog-title a:hover {
-    color: @linkColor;
+    background-image: none;
     text-decoration: none;
 }
 
@@ -250,6 +312,10 @@ footer {
         margin: 0 auto;
         max-width: 600px;
         width: 90%;
+    }
+
+    footer a:focus, footer a:hover {
+        .underline(@linkColor, @subtleColor);
     }
 
 /* === Navigation and Pagination === */
@@ -338,7 +404,7 @@ nav {
 }
 
 .older-posts:hover, .newer-posts:hover {
-    color: @linkColorHover;
+    .underline;
     text-decoration: none;
 }
 

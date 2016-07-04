@@ -1,9 +1,10 @@
 @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+/* === Mixins === */
 /* === Core Styles === */
 body {
-  background-color: #ffffff;
-  color: #7f8c8d;
+  background-color: #FFFFFF;
+  color: #7F8C8D;
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
@@ -26,14 +27,24 @@ dd {
 }
 a,
 a:visited {
-  color: #3498db;
+  color: #D96459;
   text-decoration: none;
-  transition: color ease 0.3s;
-  -webkit-transition: color ease 0.3s;
 }
 a:focus,
 a:hover {
-  color: #57aae1;
+  display: inline;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(#D96459, #D96459);
+  background-size: 0.10em 0.01em,
+        0.10em 0.07em,
+        0.07em 0.07em;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-y: 98%,
+        98%,
+        98%;
+  background-position-x: 0%,
+        100%,
+        0%;
+  text-shadow: 0.1em 0em #FFFFFF, 0.1em 0.02em #FFFFFF, 0.1em 0.04em #FFFFFF, 0.1em 0.06em #FFFFFF, 0.1em 0.08em #FFFFFF, 0.1em 0.1em #FFFFFF, 0.08em 0.1em #FFFFFF, 0.06em 0.1em #FFFFFF, 0.04em 0.1em #FFFFFF, 0.02em 0.1em #FFFFFF, 0em 0.1em #FFFFFF, -0.02em 0.1em #FFFFFF, -0.04em 0.1em #FFFFFF, -0.06em 0.1em #FFFFFF, -0.08em 0.1em #FFFFFF, -0.1em 0.1em #FFFFFF, -0.1em 0.08em #FFFFFF, -0.1em 0.06em #FFFFFF, -0.1em 0.04em #FFFFFF, -0.1em 0.02em #FFFFFF, -0.1em 0em #FFFFFF, -0.1em 0.02em #FFFFFF, -0.1em 0.04em #FFFFFF, -0.1em -0.06em #FFFFFF, -0.1em -0.08em #FFFFFF, -0.1em -0.1em #FFFFFF, -0.08em -0.1em #FFFFFF, -0.06em -0.1em #FFFFFF, -0.04em -0.1em #FFFFFF, -0.02em -0.1em #FFFFFF, 0em -0.1em #FFFFFF, 0.02em -0.1em #FFFFFF, 0.04em -0.1em #FFFFFF, 0.06em -0.1em #FFFFFF, 0.08em -0.1em #FFFFFF, 0.1em -0.1em #FFFFFF, 0.1em -0.08em #FFFFFF, 0.1em -0.06em #FFFFFF, 0.1em -0.04em #FFFFFF, 0.1em -0.02em #FFFFFF;
 }
 p,
 li,
@@ -60,7 +71,7 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #F3F3F3;
 }
 p code {
   font-family: "Consolas", Courier, monospace;
@@ -84,8 +95,8 @@ h1 {
   max-width: 100%;
 }
 #site-head .header-col {
-  border-top: 1px solid #ecf0f1;
-  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ECF0F1;
+  border-bottom: 1px solid #ECF0F1;
   max-width: 600px;
   margin: 0 auto 2em auto;
   padding: 1em 0;
@@ -113,7 +124,7 @@ article.preview {
   border-radius: 50%;
   background-size: cover !important;
   background-position: center center !important;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 .blog-title {
   font-size: 48px;
@@ -132,7 +143,7 @@ article.preview {
 /* === Body === */
 blockquote {
   font-style: italic;
-  border-left: 0.5em solid rgba(0, 0, 0, 0.05);
+  border-left: 0.5em solid #F3F3F3;
   margin-left: 1em;
   padding-left: 1em;
 }
@@ -140,7 +151,7 @@ blockquote p {
   font-style: italic;
 }
 .post-meta {
-  color: #95a5a6;
+  color: #95A5A6;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -170,12 +181,10 @@ blockquote p {
 .blog-title a {
   color: #151515;
   text-align: left;
-  transition: color ease 0.3s;
-  -webkit-transition: color ease 0.3s;
 }
 .blog-title a:focus,
 .blog-title a:hover {
-  color: #3498db;
+  background-image: none;
   text-decoration: none;
 }
 h2 {
@@ -192,7 +201,7 @@ section.post-content img {
 }
 /* === Footer === */
 footer {
-  background: rgba(0, 0, 0, 0.05);
+  background: #F3F3F3;
   margin: 4em 0 0;
   padding: 2em 0;
   text-align: center;
@@ -204,6 +213,22 @@ footer section {
   margin: 0 auto;
   max-width: 600px;
   width: 90%;
+}
+footer a:focus,
+footer a:hover {
+  display: inline;
+  background-image: linear-gradient(#F3F3F3, #F3F3F3), linear-gradient(#F3F3F3, #F3F3F3), linear-gradient(#D96459, #D96459);
+  background-size: 0.10em 0.01em,
+        0.10em 0.07em,
+        0.07em 0.07em;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-y: 98%,
+        98%,
+        98%;
+  background-position-x: 0%,
+        100%,
+        0%;
+  text-shadow: 0.1em 0em #F3F3F3, 0.1em 0.02em #F3F3F3, 0.1em 0.04em #F3F3F3, 0.1em 0.06em #F3F3F3, 0.1em 0.08em #F3F3F3, 0.1em 0.1em #F3F3F3, 0.08em 0.1em #F3F3F3, 0.06em 0.1em #F3F3F3, 0.04em 0.1em #F3F3F3, 0.02em 0.1em #F3F3F3, 0em 0.1em #F3F3F3, -0.02em 0.1em #F3F3F3, -0.04em 0.1em #F3F3F3, -0.06em 0.1em #F3F3F3, -0.08em 0.1em #F3F3F3, -0.1em 0.1em #F3F3F3, -0.1em 0.08em #F3F3F3, -0.1em 0.06em #F3F3F3, -0.1em 0.04em #F3F3F3, -0.1em 0.02em #F3F3F3, -0.1em 0em #F3F3F3, -0.1em 0.02em #F3F3F3, -0.1em 0.04em #F3F3F3, -0.1em -0.06em #F3F3F3, -0.1em -0.08em #F3F3F3, -0.1em -0.1em #F3F3F3, -0.08em -0.1em #F3F3F3, -0.06em -0.1em #F3F3F3, -0.04em -0.1em #F3F3F3, -0.02em -0.1em #F3F3F3, 0em -0.1em #F3F3F3, 0.02em -0.1em #F3F3F3, 0.04em -0.1em #F3F3F3, 0.06em -0.1em #F3F3F3, 0.08em -0.1em #F3F3F3, 0.1em -0.1em #F3F3F3, 0.1em -0.08em #F3F3F3, 0.1em -0.06em #F3F3F3, 0.1em -0.04em #F3F3F3, 0.1em -0.02em #F3F3F3;
 }
 /* === Navigation and Pagination === */
 nav {
@@ -250,12 +275,12 @@ nav.pagination li:last-child {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  color: #7f8c8d;
+  color: #7F8C8D;
   text-align: center;
   padding: 0.5em 0;
 }
 .pagination a {
-  color: #3498db;
+  color: #D96459;
 }
 .older-posts,
 .newer-posts {
@@ -279,7 +304,19 @@ nav.pagination li:last-child {
 }
 .older-posts:hover,
 .newer-posts:hover {
-  color: #57aae1;
+  display: inline;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(#D96459, #D96459);
+  background-size: 0.10em 0.01em,
+        0.10em 0.07em,
+        0.07em 0.07em;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-y: 98%,
+        98%,
+        98%;
+  background-position-x: 0%,
+        100%,
+        0%;
+  text-shadow: 0.1em 0em #FFFFFF, 0.1em 0.02em #FFFFFF, 0.1em 0.04em #FFFFFF, 0.1em 0.06em #FFFFFF, 0.1em 0.08em #FFFFFF, 0.1em 0.1em #FFFFFF, 0.08em 0.1em #FFFFFF, 0.06em 0.1em #FFFFFF, 0.04em 0.1em #FFFFFF, 0.02em 0.1em #FFFFFF, 0em 0.1em #FFFFFF, -0.02em 0.1em #FFFFFF, -0.04em 0.1em #FFFFFF, -0.06em 0.1em #FFFFFF, -0.08em 0.1em #FFFFFF, -0.1em 0.1em #FFFFFF, -0.1em 0.08em #FFFFFF, -0.1em 0.06em #FFFFFF, -0.1em 0.04em #FFFFFF, -0.1em 0.02em #FFFFFF, -0.1em 0em #FFFFFF, -0.1em 0.02em #FFFFFF, -0.1em 0.04em #FFFFFF, -0.1em -0.06em #FFFFFF, -0.1em -0.08em #FFFFFF, -0.1em -0.1em #FFFFFF, -0.08em -0.1em #FFFFFF, -0.06em -0.1em #FFFFFF, -0.04em -0.1em #FFFFFF, -0.02em -0.1em #FFFFFF, 0em -0.1em #FFFFFF, 0.02em -0.1em #FFFFFF, 0.04em -0.1em #FFFFFF, 0.06em -0.1em #FFFFFF, 0.08em -0.1em #FFFFFF, 0.1em -0.1em #FFFFFF, 0.1em -0.08em #FFFFFF, 0.1em -0.06em #FFFFFF, 0.1em -0.04em #FFFFFF, 0.1em -0.02em #FFFFFF;
   text-decoration: none;
 }
 /* === Extras === */
@@ -290,7 +327,7 @@ nav.pagination li:last-child {
 }
 .gist .gist-file {
   font-family: "Consolas", Courier, monospace;
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #F3F3F3 !important;
 }
 .gist .gist-file .gist-meta {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif !important;
@@ -300,10 +337,10 @@ nav.pagination li:last-child {
   /* Hide GitHub attribution */
 }
 .gist .gist-file .gist-meta a:visited {
-  color: #3498db !important;
+  color: #D96459 !important;
 }
 .gist .gist-file .gist-data {
-  background: #fdfdfd !important;
+  background: #FDFDFD !important;
   border-bottom: none !important;
   /* Hide GitHub attribution */
 }
@@ -312,7 +349,7 @@ nav.pagination li:last-child {
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-meta {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #F3F3F3 !important;
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-data .line-pre {
@@ -369,15 +406,15 @@ table td {
 }
 table thead {
   font-weight: 600;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ECF0F1;
 }
 table tbody tr:nth-child(even) {
-  background-color: #ecf0f1;
+  background-color: #ECF0F1;
   border-top: 1px solid #e3e9eb;
   border-bottom: 1px solid #e3e9eb;
 }
 table tfoot {
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #ECF0F1;
 }
 /* === Media Queries === */
 @media only screen and (min-width: 320px) and (max-width: 500px) {
