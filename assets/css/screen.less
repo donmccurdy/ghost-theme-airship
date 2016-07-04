@@ -4,6 +4,7 @@
 
 @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+@import (reference) "mixins.less";
 
 // Variables
 
@@ -26,73 +27,6 @@
 @maxPageWidth: 600px;
 
 // Styles
-
-/* === Mixins === */
-
-.underline (@fgColor: @linkColor, @bgColor: @bodyBackgroundColor) {
-    display: inline;
-    background-image:
-        linear-gradient(@bgColor, @bgColor),
-        linear-gradient(@bgColor, @bgColor),
-        linear-gradient(@fgColor, @fgColor);
-    background-size:
-        0.10em 0.01em,
-        0.10em 0.07em,
-        0.07em 0.07em;
-    background-repeat:
-        no-repeat,
-        no-repeat,
-        repeat-x;
-    background-position-y:
-        98%,
-        98%,
-        98%;
-    background-position-x:
-        0%,
-        100%,
-        0%;
-    text-shadow:
-         0.10em  0.00em @bgColor,
-         0.10em  0.02em @bgColor,
-         0.10em  0.04em @bgColor,
-         0.10em  0.06em @bgColor,
-         0.10em  0.08em @bgColor,
-         0.10em  0.10em @bgColor,
-         0.08em  0.10em @bgColor,
-         0.06em  0.10em @bgColor,
-         0.04em  0.10em @bgColor,
-         0.02em  0.10em @bgColor,
-         0.00em  0.10em @bgColor,
-        -0.02em  0.10em @bgColor,
-        -0.04em  0.10em @bgColor,
-        -0.06em  0.10em @bgColor,
-        -0.08em  0.10em @bgColor,
-        -0.10em  0.10em @bgColor,
-        -0.10em  0.08em @bgColor,
-        -0.10em  0.06em @bgColor,
-        -0.10em  0.04em @bgColor,
-        -0.10em  0.02em @bgColor,
-        -0.10em  0.00em @bgColor,
-        -0.10em  0.02em @bgColor,
-        -0.10em  0.04em @bgColor,
-        -0.10em -0.06em @bgColor,
-        -0.10em -0.08em @bgColor,
-        -0.10em -0.10em @bgColor,
-        -0.08em -0.10em @bgColor,
-        -0.06em -0.10em @bgColor,
-        -0.04em -0.10em @bgColor,
-        -0.02em -0.10em @bgColor,
-         0.00em -0.10em @bgColor,
-         0.02em -0.10em @bgColor,
-         0.04em -0.10em @bgColor,
-         0.06em -0.10em @bgColor,
-         0.08em -0.10em @bgColor,
-         0.10em -0.10em @bgColor,
-         0.10em -0.08em @bgColor,
-         0.10em -0.06em @bgColor,
-         0.10em -0.04em @bgColor,
-         0.10em -0.02em @bgColor;
-}
 
 /* === Core Styles === */
 
@@ -280,7 +214,6 @@ blockquote {
 
 .blog-title a:focus, .blog-title a:hover {
     background-image: none;
-    text-decoration: none;
 }
 
 h2 {
@@ -316,7 +249,7 @@ footer {
     }
 
     footer a:focus, footer a:hover {
-        .underline(@linkColor, @subtleColor);
+        .underline(@subtleColor);
     }
 
 /* === Navigation and Pagination === */
@@ -406,7 +339,6 @@ nav {
 
 .older-posts:hover, .newer-posts:hover {
     .underline;
-    text-decoration: none;
 }
 
 /* === Extras === */
