@@ -6,10 +6,10 @@ Theme for [Ghost](http://github.com/tryghost/ghost/), based on [Vapor](https://g
 
 - [x] Navigation only, not slug, on non-home pages.
 - [x] Use header wrap for borders.
-- [ ] Improved slug.
+- [x] Improved slug.
+- [x] Add some color (links + header?).
+- [x] Improve header styles on mobile.
 - [ ] Typography pairings could be better, and limit number of font sizes. Three fonts + icon font is excessive.
-- [ ] Add some color (links + header?).
-- [ ] Improve header styles on mobile.
 
 ## License
 
