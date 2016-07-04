@@ -48,10 +48,6 @@ h1, h2, h3, h4, p, li, dt, dd {
     font-family: @baseFontFamily;
 }
 
-h1, .post-meta {
-    text-align: center
-}
-
 a, a:visited {
     color: @linkColor;
     text-decoration: none;
@@ -119,12 +115,6 @@ h1 {
 
 article.preview {
     margin-bottom: 4em;
-    p.readmore {
-      font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-      margin-top: 1em;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
 }
 
 /* === Header === */
@@ -335,19 +325,11 @@ footer {
 
     footer section {
         font-family: @secondaryFontFamily;
-        font-weight: 300;
         font-size: 18px;
         margin: 0 auto;
         max-width: 600px;
-        text-transform: uppercase;
         width: 90%;
     }
-
-footer.post-footer {
-    background: none;
-    border-top: 1px solid @borderColor;
-    margin-top: 1em;
-}
 
 /* === Navigation and Pagination === */
 
@@ -368,11 +350,10 @@ nav {
         li {
             display: inline-block;
             font-family: @secondaryFontFamily;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 300;
             margin: 0;
             padding: 0 .5em;
-            text-align: center;
             text-transform: uppercase;
             a {
                 display: block;

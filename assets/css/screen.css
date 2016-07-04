@@ -24,10 +24,6 @@ dt,
 dd {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
-h1,
-.post-meta {
-  text-align: center;
-}
 a,
 a:visited {
   color: #3498db;
@@ -94,12 +90,6 @@ a.archive-link,
 }
 article.preview {
   margin-bottom: 4em;
-}
-article.preview p.readmore {
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  margin-top: 1em;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 /* === Header === */
 #blog-logo {
@@ -287,17 +277,10 @@ footer {
 }
 footer section {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-weight: 300;
   font-size: 18px;
   margin: 0 auto;
   max-width: 600px;
-  text-transform: uppercase;
   width: 90%;
-}
-footer.post-footer {
-  background: none;
-  border-top: 1px solid #ecf0f1;
-  margin-top: 1em;
 }
 /* === Navigation and Pagination === */
 nav {
@@ -319,11 +302,10 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   margin: 0;
   padding: 0 .5em;
-  text-align: center;
   text-transform: uppercase;
 }
 nav ul li a {
