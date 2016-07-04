@@ -143,14 +143,13 @@ article.preview {
 }
 
 .blog-description {
-    font-family: @secondaryFontFamily;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-family: @baseFontFamily;
+    font-size: 1.2em;
     margin-top: 2em;
     border-top: 1px solid @borderColor;
     margin-bottom: 0;
     padding: 1em;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 section.footer-description {
@@ -162,56 +161,6 @@ header.article-header, header.page-header {
 }
 
 /* === Body === */
-
-section.author, section.share {
-    width: 100%;
-    text-align: left;
-    text-transform: none;
-}
-
-section.share {
-    margin-top: 1em;
-    border-top: 1px solid @borderColor;
-    padding-top: 1em;
-    text-align: right;
-}
-
-    section.author h4, section.author p, section.share p {
-        padding: 0;
-        margin: 0;
-    }
-
-section.author h4 {
-    font-family: @headerFontFamily;
-    font-weight: 400;
-    margin-bottom: 4px;
-}
-
-section.author p.attr, section.share p.info {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    font-family: @secondaryFontFamily;
-}
-
-section.share p.info.prompt {
-    top: -5px;
-    position: relative;
-}
-
-section.author p.attr {
-    margin-bottom: 2px
-}
-
-section.share p.info {
-    display: inline-block
-}
-
-section.author p.bio {
-    font-size: 16px;
-    margin-left: 82px;
-    line-height: 1.4em;
-}
 
 blockquote {
     font-family: @secondaryFontFamily;
@@ -248,16 +197,6 @@ blockquote {
 .tags {
     font-size: 16px;
     margin-bottom: 0.6em;
-}
-
-div.authorimage {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-size: cover !important;
-  background-position: center center !important;
-  margin-right: 10px;
-  float: left;
 }
 
 .post-title {
@@ -301,10 +240,6 @@ section.preview.archive h2 {
     text-align: left
 }
 
-section.author {
-    overflow: hidden
-}
-
 img.userimage {
     width: 70px;
     max-width: 70px;
@@ -321,6 +256,7 @@ footer {
     margin: 4em 0 0;
     padding: 2em 0;
     text-align: center;
+    text-transform: uppercase;
 }
 
     footer section {

@@ -114,14 +114,13 @@ article.preview {
   text-align: center;
 }
 .blog-description {
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 1.5em;
-  font-weight: 300;
+  font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-size: 1.2em;
   margin-top: 2em;
   border-top: 1px solid #ecf0f1;
   margin-bottom: 0;
   padding: 1em;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 section.footer-description {
   margin-bottom: 1em;
@@ -131,51 +130,6 @@ header.page-header {
   margin-bottom: 3em;
 }
 /* === Body === */
-section.author,
-section.share {
-  width: 100%;
-  text-align: left;
-  text-transform: none;
-}
-section.share {
-  margin-top: 1em;
-  border-top: 1px solid #ecf0f1;
-  padding-top: 1em;
-  text-align: right;
-}
-section.author h4,
-section.author p,
-section.share p {
-  padding: 0;
-  margin: 0;
-}
-section.author h4 {
-  font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-weight: 400;
-  margin-bottom: 4px;
-}
-section.author p.attr,
-section.share p.info {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-}
-section.share p.info.prompt {
-  top: -5px;
-  position: relative;
-}
-section.author p.attr {
-  margin-bottom: 2px;
-}
-section.share p.info {
-  display: inline-block;
-}
-section.author p.bio {
-  font-size: 16px;
-  margin-left: 82px;
-  line-height: 1.4em;
-}
 blockquote {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 1.6em;
@@ -208,15 +162,6 @@ blockquote p {
 .tags {
   font-size: 16px;
   margin-bottom: 0.6em;
-}
-div.authorimage {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-size: cover !important;
-  background-position: center center !important;
-  margin-right: 10px;
-  float: left;
 }
 .post-title {
   color: #151515;
@@ -257,9 +202,6 @@ section.post-content img {
 section.preview.archive h2 {
   text-align: left;
 }
-section.author {
-  overflow: hidden;
-}
 img.userimage {
   width: 70px;
   max-width: 70px;
@@ -274,6 +216,7 @@ footer {
   margin: 4em 0 0;
   padding: 2em 0;
   text-align: center;
+  text-transform: uppercase;
 }
 footer section {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
