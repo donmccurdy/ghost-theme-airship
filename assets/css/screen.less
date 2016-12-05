@@ -257,10 +257,10 @@ footer {
 nav {
     text-align: center;
     ul {
+        display: inline-flex;
         list-style: none;
         margin: 0 auto;
         padding: 0;
-        width: 100%;
         overflow: hidden;
         text-align: center;
         li {
@@ -280,9 +280,9 @@ nav {
             margin: 0 .5em;
             padding: 0;
         }
-    }
-    &.menu:not(:hover) .nav-current a {
-        .underline;
+        ul:not(:hover) .nav-current a {
+            .underline;
+        }
     }
     &.pagination {
         li {
