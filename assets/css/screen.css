@@ -182,7 +182,8 @@ h2 {
   margin-top: 2em;
   text-transform: uppercase;
 }
-section.post-content img {
+section.post-content img,
+section.post-excerpt img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
