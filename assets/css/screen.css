@@ -3,7 +3,7 @@
 /* === Core Styles === */
 body {
   background-color: #FFFFFF;
-  color: #7F8C8D;
+  color: #4F6C6D;
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
@@ -39,9 +39,9 @@ p,
 li,
 dt,
 dd {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 100;
-  line-height: 30px;
+  line-height: 1.7em;
 }
 dt {
   font-weight: 400;
@@ -86,7 +86,7 @@ h1 {
 #site-head .header-col {
   border-top: 1px solid #ECF0F1;
   border-bottom: 1px solid #ECF0F1;
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto 2em auto;
   padding: 1em 0;
 }
@@ -94,11 +94,19 @@ article,
 article.preview,
 .article-nav {
   margin: 1em auto;
-  max-width: 600px;
+  max-width: 720px;
   width: 90%;
 }
 article.preview {
   margin-bottom: 4em;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  p,
+  li,
+  dt,
+  dd {
+    font-size: 1.0em;
+  }
 }
 /* === Header === */
 #blog-logo {
@@ -124,7 +132,7 @@ article.preview {
 }
 .blog-description {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.0rem;
   margin-bottom: 0;
   line-height: 1.5em;
   text-align: center;
@@ -188,6 +196,20 @@ section.post-excerpt img {
   margin: 0 auto;
   max-width: 100%;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .blog-title {
+    font-size: 36px;
+  }
+  .blog-description {
+    padding: 0 1em;
+  }
+  .post-title {
+    font-size: 24px;
+  }
+  .post-meta {
+    font-size: 15px;
+  }
+}
 /* === Footer === */
 footer {
   background: #F3F3F3;
@@ -200,7 +222,7 @@ footer section {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 18px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 720px;
   width: 90%;
 }
 footer a:focus,
@@ -209,9 +231,15 @@ footer a:hover {
   text-decoration: none;
   text-shadow: 0.05em 0 #F3F3F3, -0.05em 0 #F3F3F3, 2px 0 #F3F3F3, -2px 0 #F3F3F3;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  footer section span.copyright {
+    display: block;
+  }
+}
 /* === Navigation and Pagination === */
 nav {
   text-align: center;
+  font-size: 1.2rem;
 }
 nav ul {
   display: inline-flex;
@@ -254,12 +282,12 @@ nav.pagination li:last-child {
 .pagination {
   position: relative;
   width: 90%;
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  color: #7F8C8D;
+  color: #4F6C6D;
   text-align: center;
   padding: 0.5em 0;
 }
@@ -291,6 +319,24 @@ nav.pagination li:last-child {
   box-shadow: inset 0 calc(-0.09em) 0 0 #FFF, inset 0 -0.14em 0 0 rgba(255, 255, 255, 0.2), inset 0 -0.14em 0 0 currentColor;
   text-decoration: none;
   text-shadow: 0.05em 0 #FFF, -0.05em 0 #FFF, 2px 0 #FFF, -2px 0 #FFF;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  nav li {
+    width: auto;
+  }
+  .older-posts,
+  .newer-posts {
+    position: static;
+  }
+  .newer-posts {
+    margin-bottom: 10px;
+  }
+  .older-posts {
+    margin-top: 10px;
+  }
+  .page-number {
+    display: block;
+  }
 }
 /* === Extras === */
 .gist {
@@ -395,38 +441,4 @@ hr {
   height: 1px;
   background: #ECF0F1;
   margin: 6em 0;
-}
-/* === Media Queries === */
-@media only screen and (min-width: 320px) and (max-width: 500px) {
-  .blog-title {
-    font-size: 36px;
-  }
-  .blog-description {
-    padding: 0 1em;
-  }
-  .post-title {
-    font-size: 24px;
-  }
-  .post-meta {
-    font-size: 15px;
-  }
-  footer section span.copyright {
-    display: block;
-  }
-  nav li {
-    width: auto;
-  }
-  .older-posts,
-  .newer-posts {
-    position: static;
-  }
-  .newer-posts {
-    margin-bottom: 10px;
-  }
-  .older-posts {
-    margin-top: 10px;
-  }
-  .page-number {
-    display: block;
-  }
 }

@@ -10,7 +10,7 @@
 
 @bodyBackgroundColor: #FFFFFF;
 @baseFontFamily: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@baseFontColor: #7F8C8D;
+@baseFontColor: #4F6C6D;
 @baseFontSize: 15px;
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
 @headerFontColor: #151515;
@@ -24,7 +24,7 @@
 @postmetaColor: #95A5A6;
 @gistBackgroundColor: #FDFDFD;
 
-@maxPageWidth: 600px;
+@maxPageWidth: 720px;
 
 // Styles
 
@@ -59,9 +59,9 @@ a:focus, a:hover {
 }
 
 p, li, dt, dd {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 1.7em;
 }
 
 dt {
@@ -114,19 +114,25 @@ h1 {
     #site-head .header-col {
         border-top: 1px solid @borderColor;
         border-bottom: 1px solid @borderColor;
-        max-width: 600px;
+        max-width: @maxPageWidth;
         margin: 0 auto 2em auto;
         padding: 1em 0;
     }
 
 article, article.preview, .article-nav {
     margin: 1em auto;
-    max-width: 600px;
+    max-width: @maxPageWidth;
     width: 90%;
 }
 
 article.preview {
     margin-bottom: 4em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    p, li, dt, dd {
+        font-size: 1.0em;
+    }
 }
 
 /* === Header === */
@@ -156,7 +162,7 @@ article.preview {
 
 .blog-description {
     font-family: @baseFontFamily;
-    font-size: 1.2em;
+    font-size: 1.0rem;
     margin-bottom: 0;
     line-height: 1.5em;
     text-align: center;
@@ -231,6 +237,24 @@ section.post-excerpt img {
     max-width: 100%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .blog-title {
+        font-size: 36px;
+    }
+
+    .blog-description {
+        padding: 0 1em;
+    }
+
+    .post-title {
+        font-size: 24px;
+    }
+
+    .post-meta {
+        font-size: @baseFontSize;
+    }
+}
+
 /* === Footer === */
 
 footer {
@@ -245,7 +269,7 @@ footer {
         font-family: @secondaryFontFamily;
         font-size: 18px;
         margin: 0 auto;
-        max-width: 600px;
+        max-width: @maxPageWidth;
         width: 90%;
     }
 
@@ -253,10 +277,18 @@ footer {
         .underline(@subtleColor);
     }
 
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    footer section span.copyright {
+        display: block
+    }
+}
+
 /* === Navigation and Pagination === */
 
 nav {
     text-align: center;
+    font-size: 1.2rem;
+
     ul {
         display: inline-flex;
         list-style: none;
@@ -304,7 +336,7 @@ nav {
 .pagination {
     position: relative;
     width: 90%;
-    max-width: 600px;
+    max-width: @maxPageWidth;
     margin: 0 auto;
     font-family: @secondaryFontFamily;
     text-transform: uppercase;
@@ -343,6 +375,30 @@ nav {
 
 .older-posts:hover, .newer-posts:hover {
     .underline;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+
+    nav li {
+        width: auto
+    }
+
+    .older-posts, .newer-posts {
+        position: static
+    }
+
+    .newer-posts {
+        margin-bottom: 10px
+    }
+
+    .older-posts {
+        margin-top: 10px
+    }
+
+    .page-number {
+        display: block
+    }
 }
 
 /* === Extras === */
@@ -465,48 +521,4 @@ hr {
     height: 1px;
     background: @borderColor;
     margin: 6em 0;
-}
-
-/* === Media Queries === */
-
-@media only screen and (min-width: 320px) and (max-width: 500px) {
-    .blog-title {
-        font-size: 36px;
-    }
-
-    .blog-description {
-        padding: 0 1em;
-    }
-
-    .post-title {
-        font-size: 24px;
-    }
-
-    .post-meta {
-        font-size: @baseFontSize;
-    }
-
-    footer section span.copyright {
-        display: block
-    }
-
-    nav li {
-        width: auto
-    }
-
-    .older-posts, .newer-posts {
-        position: static
-    }
-
-    .newer-posts {
-        margin-bottom: 10px
-    }
-
-    .older-posts {
-        margin-top: 10px
-    }
-
-    .page-number {
-        display: block
-    }
 }
