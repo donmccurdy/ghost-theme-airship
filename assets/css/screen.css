@@ -97,8 +97,9 @@ article.preview,
   max-width: 720px;
   width: 90%;
 }
-article.preview {
-  margin-bottom: 4em;
+article.preview + hr {
+  max-width: 720px;
+  margin: 4em auto;
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   p,
@@ -106,6 +107,9 @@ article.preview {
   dt,
   dd {
     font-size: 1.0em;
+  }
+  article.preview + hr {
+    margin: 3em auto;
   }
 }
 /* === Header === */
@@ -196,6 +200,11 @@ section.post-excerpt img {
   margin: 0 auto;
   max-width: 100%;
 }
+section.post-excerpt .read-more {
+  font-size: 1.3rem;
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  text-transform: uppercase;
+}
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .blog-title {
     font-size: 36px;
@@ -283,7 +292,7 @@ nav.pagination li:last-child {
   position: relative;
   width: 90%;
   max-width: 720px;
-  margin: 0 auto;
+  margin: 4em auto 0 auto;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
