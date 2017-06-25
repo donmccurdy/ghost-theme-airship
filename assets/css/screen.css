@@ -135,9 +135,12 @@ article.preview + hr {
   text-align: center;
 }
 .blog-description {
+  max-width: 475px;
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 1.0rem;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5em;
   text-align: center;
 }
